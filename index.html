@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="brand">
+                    <div>THE MESSAGE OF THE HOUR</div>
+                </div>
+            </div>    
+        </div>
+        
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+      
+              <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/portfolio1.jpg)"></div>
+      
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/hoffman.jpg" alt="">
+                  </div>
+      
+                  <div class="subtitle"></div>This is a picture painted by hoffman</div>
+                </div>
+              </div>
+      
+              <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/portfolio2.jpg)"></div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/cloud2.jpe" alt="">
+                  </div>
+      
+                  <div class="subtitle">This mysterious cloud appeared on February 28, 1963</div>
+                </div>
+              </div>
+      
+              <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/portfolio3.jpg)"></div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/William Branham.jpeg" alt="">
+                  </div>
+      
+                  <div class="subtitle">This is William Branham. A prophet sent from God</div>
+                </div>
+              </div>
+      
+              <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/portfolio4.jpg)"></div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/Holy-Bible.jpg" alt="">
+                  </div>
+      
+                  <div class="subtitle">This is the Holy Bible</div>
+                </div>
+              </div>
+      
+              <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/portfolio5.jpg)"></div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/brochure.jpg" alt="">
+                  </div>
+      
+                  <div class="subtitle">This is a book in which sermons of William Branham are contained</div>
+                </div>
+              </div>
+      
+              <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/portfolio6.jpg)"></div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/Joseph Coleman.jpeg" alt="">
+                  </div>
+      
+                  <div class="subtitle">This is Joseph Coleman, God's apostle</div>
+                </div>
+              </div>
+      
+              <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/portfolio7.jpg)"></div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/joseph_branham.jpg" alt="">
+                  </div>
+      
+                  <div class="subtitle">This is Joseph Branham, God's prophet</div>
+                </div>
+              </div>
+      
+              <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/portfolio8.jpg)"></div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/BK.jpeg" alt="">
+                  </div>
+      
+                  <div class="subtitle">This is Baruti Kasongo, God's evangelist</div>
+                </div>
+              </div>
+      
+              <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/portfolio9.jpg)"></div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/Arthur Mosaka.jpeg" alt="">
+                  </div>
+      
+                  <div class="subtitle">This is Arthur Mosaka, God's pastor</div>
+                </div>
+              </div>
+      
+              <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/portfolio10.jpg)"></div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/Francis Tchinona.jpeg" alt="">
+                  </div>
+      
+                  <div class="subtitle">This is Francis Tchinona, a teacher sent by God</div>
+                </div>
+              </div>
+      
+              <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/portfolio11.jpg)"></div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/Tchinona.jpg" alt="">
+                  </div>
+      
+                  <div class="subtitle">This is my pastor</div>
+                </div>
+              </div>
+      
+              <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image:url(images/portfolio12.jpg)"></div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="images/Chad Lamb.jpg" alt="">
+                  </div>
+      
+                  <div class="subtitle">This is Chad Lamb, a God's servant</div>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+      
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            console.log(portfolioItem.childNodes[1].classList);
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+</html>
